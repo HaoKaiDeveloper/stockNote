@@ -1,0 +1,63 @@
+.indexCard {
+  width: 100%;
+  letter-spacing: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.indexCard h2 {
+  width: 100%;
+}
+
+.indexCard button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 23px;
+  line-height: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--grey-3);
+}
+
+.index_P,
+.index_N {
+  font-size: var(--f-l);
+  font-weight: 600;
+  flex: 1;
+}
+
+.index_P {
+  color: red;
+}
+
+.index_N {
+  color: green;
+}
+
+.dev_P,
+.dev_N {
+  font-size: var(--f-mi);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.dev_P {
+  color: red;
+}
+.dev_N {
+  color: green;
+}
+.indexChart {
+  width: 100%;
+  height: 150px;
+  background-color: var(--grey-2);
+  margin-top: 10px;
+  transition: all 0.5s;
+  transform-origin: top;
+}

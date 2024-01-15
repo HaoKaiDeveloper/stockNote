@@ -1,0 +1,66 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  color: var(--grey-3);
+  position: relative;
+}
+.form label {
+  width: 100%;
+  font-size: var(--f-mi);
+}
+.form input {
+  margin-top: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--grey-2);
+  outline: none;
+  padding: 5px;
+  font-size: var(--f-mi);
+  letter-spacing: 1.5px;
+}
+.form input:focus {
+  border-bottom: 1px solid var(--grey-4);
+}
+
+.form button[type="submit"] {
+  align-self: center;
+  background-color: var(--grey-1);
+  border: none;
+  padding: 5px 10px;
+  font-size: var(--f-mi);
+  border-radius: 5px;
+}
+.form button[type="button"] {
+  color: var(--grey-3);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--grey-3);
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+.form p {
+  font-size: var(--f-s);
+  height: 15px;
+  align-self: center;
+}
+
+.googleBtn {
+  display: flex;
+  justify-content: center;
+}

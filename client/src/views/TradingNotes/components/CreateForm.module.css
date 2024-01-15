@@ -1,0 +1,105 @@
+.createForm {
+  position: relative;
+}
+
+.toggleBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+  color: var(--color-p-3);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  animation: btn 1s linear infinite;
+}
+@keyframes btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  max-height: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+.form.show {
+  max-height: 100vh;
+}
+.form label {
+  font-size: var(--f-mi);
+  min-width: 100px;
+  flex: 1;
+}
+.form input {
+  border: none;
+  border-bottom: 1px solid var(--grey-3);
+  display: block;
+  font-size: var(--f-mi);
+  padding: 2px 5px;
+  outline: none;
+  width: 100%;
+}
+.form input:focus {
+  border-bottom: 1px solid var(--color-p-3);
+}
+
+.form input[type="file"] {
+  display: none;
+}
+
+.form button[type="submit"] {
+  font-size: var(--f-mi);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 7px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+.form button[type="submit"]:active,
+form button[type="submit"]:hover {
+  color: var(--grey-1);
+  background-color: var(--color-p-3);
+  transform: translate(1.5px, 1.5px);
+}
+
+.form article {
+  width: 100%;
+  height: auto;
+}
+
+.msg {
+  text-align: center;
+  width: 100%;
+  font-size: var(--f-s);
+  letter-spacing: 2px;
+  height: 17px;
+}
+
+.form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .form article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

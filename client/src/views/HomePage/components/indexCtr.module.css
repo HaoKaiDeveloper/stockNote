@@ -1,0 +1,10 @@
+.indexCtr {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .indexCtr {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,17 @@
+.card {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+
+.card h2 {
+  font-size: var(--f-mi);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    padding: 10px;
+  }
+}

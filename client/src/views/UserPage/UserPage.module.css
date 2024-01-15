@@ -1,0 +1,82 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  width: 100%;
+  max-width: 300px;
+}
+
+.main,
+.main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.picture {
+  position: relative;
+}
+.picture button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: none;
+}
+
+.picture input[type="file"] {
+  display: none;
+}
+.header {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--grey-2);
+}
+.header img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.main form {
+  align-items: flex-start;
+}
+
+.main label {
+  font-size: var(--f-mi);
+}
+.main input {
+  font-size: var(--f-mi);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--grey-2);
+  padding: 5px;
+}
+.main input:focus {
+  border-bottom: 1px solid var(--color-p-3);
+}
+.main p {
+  align-self: center;
+  color: var(--grey-3);
+  letter-spacing: 2px;
+}
+
+.main button {
+  align-self: center;
+  border: none;
+  padding: 5px 15px;
+  font-size: var(--f-s);
+  border-radius: 7px;
+}
+.msg {
+  height: 15px;
+}

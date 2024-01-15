@@ -1,0 +1,60 @@
+.noteTable {
+  width: 100%;
+  max-height: 400px;
+  overflow: auto;
+  min-width: 200px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table tbody {
+  border-bottom: 2px solid var(--grey-2);
+}
+.table tbody:hover {
+  background-color: var(--grey-1);
+}
+
+.table th,
+.table td {
+  font-size: var(--f-mi);
+}
+
+.table th {
+  padding-bottom: 15px;
+}
+.table td {
+  padding: 15px 0;
+}
+.table td span {
+  display: block;
+  font-size: var(--f-s);
+}
+
+.table button {
+  font-size: 15px;
+  border: none;
+  background-color: var(--grey-1);
+  color: var(--grey-4);
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+.table button:hover {
+  background-color: var(--color-p-3);
+  color: var(--grey-1);
+}
+
+@media screen and (max-width: 600px) {
+  .table th:nth-child(2),
+  .table td:nth-child(2),
+  .table th:nth-child(5),
+  .table td:nth-child(5) {
+    display: none;
+  }
+  .noteTable {
+    min-width: 100%;
+  }
+}
